@@ -1,0 +1,134 @@
+/* ===============
+       BODY
+=================*/
+body {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    background-color: #f4f4f9;
+    font-family: Arial, sans-serif;
+}
+
+.resume-wrapper {
+    width: 100%; 
+    max-width: 850px; 
+    margin: 0 auto; 
+    padding: 30px;
+    background-color: white;
+}
+
+h1, h2, h3, h4, h5 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/* ===============
+   RESUME HEADER
+=================*/
+h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin-bottom: 0;
+    margin-top: 2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+.secondTitle {
+    color: #555555;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    border-bottom: none;
+}
+
+.contact-info{ /* this still has weird padding on top and bottom. how to fix this with parent div. */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    word-spacing: 1rem;
+    font-size: large;
+}
+
+/* ===============
+    RESUME BODY
+=================*/
+h2 {
+    color: #007BFF;
+    border-bottom: 2px solid #007BFF;
+    padding-bottom: 5px;
+    text-transform: capitalize;
+}
+
+h4 {
+    color: #555555;}
+
+.dates {
+    font-weight: normal !important;
+    color: black !important;
+}
+
+.firstBreak {
+    height: 5px;
+    background-color: black;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+ }
+
+/* Centering compentencies and spreading them out. */
+.competencies {
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+
+/* ALL OPTIONAL BELOW IF I CHOOSE TO ADD PHOTOS... 
+img {
+    height: 100px;
+    width: 150px;
+}
+.work-experience {
+    position: relative;
+    margin-bottom: 20px;
+}
+.work-experience h4 {
+    display: inline-block; 
+    margin-right: 150px; 
+}
+.work-logo {
+    position: absolute;
+    right: 0; 
+    top: 50%;
+    width: 100px; 
+    height: auto;
+}
+.work-experience ul {
+    padding-left: 20px; 
+    clear: both; 
+}*/
+
+
+/* ===============
+      SCALING
+=================*/
+/* Adding responsiveness to ensure it adjusts on small screens */
+@media (max-width: 768px) {
+    .resume-wrapper {
+        max-width: 100%;
+        padding: 10px;
+    }
+    h2 {
+        font-size: 20px;
+    }
+    h4 {
+        font-size: 16px;
+    }
+}
+
+/* For scaling smallest screens (mobile) */
+@media (max-width: 500px) {
+    .resume-wrapper {
+      width: 400px;
+    }}
